@@ -28,7 +28,7 @@ designed to construct objects of a particular type.
 Suppose we had the following object describing a favorite comic book hero:
 
 ```js
-let batman = {
+const batman = {
   name: 'Bruce Wayne',
   alias: 'The Bat-man',
 
@@ -41,7 +41,7 @@ let batman = {
 And now we want another object describing a different hero:
 
 ```js
-let wonderWoman = {
+const wonderWoman = {
   name: 'Diana Prince',
   alias: 'Wonder Woman',
 
@@ -53,8 +53,8 @@ let wonderWoman = {
 
 Why is this not a good answer?
 
-Because *copy-and-paste is one of the biggest sources of errors* in software
- development.
+Because *copy-and-paste reuse is one of the biggest sources of errors* in
+software development.
 
 ## Lab: Model a Hero
 
@@ -66,8 +66,8 @@ Make a diagram of our `Hero` entity based on the above objects.
 
 ## Constructors
 
-JavaScript's answer to the copy-and-paste problem is **constructor functions**.
-Constructor functions:
+JavaScript's answer to the copy-and-paste reuse problem is **constructor
+functions**.  Constructor functions:
 
 -   Always start with a capital letter (convention)
 -   Are always used with the `new` keyword (self-enforced)
@@ -102,7 +102,6 @@ to the same name.
 
 ```js
 const foo = 'bar';
-const foo = 'baz'; // wrong
 foo = 'baz'; // explode!
 ```
 
