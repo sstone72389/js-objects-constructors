@@ -117,7 +117,7 @@ Now, let's create `wonderWoman` using the constructor function instead of an
  object literal:
 
 ```js
-let wonderWoman = new Hero('Diana Prince',
+const wonderWoman = new Hero('Diana Prince',
                            'Wonder Woman',
                            'Deflect bullets with bracelets');
 //=> undefined
